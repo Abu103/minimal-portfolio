@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Caveat:wght@400..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #d8d8d8;
+  color: #333;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left img {
+  width: 100%;
+  height: 70%;
+  margin-left: 10px;
+}
+.left p {
+  font-size: 2rem;
+  padding-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-wrap: nowrap;
+}
+.right {
+  align-content: center;
+}
+.right li {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.right li ul {
+  margin: 0 10px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.right li ul:hover {
+  text-decoration: underline;
+}
+
+section h1 {
+  font-family: "Caveat", cursive;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.details-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.project p {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 10px 30px;
+  font-family: "Caveat", cursive;
+}
+
+.project ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.project ul li {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.exp-os {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience p:first-child {
+  font-size: 2rem;
+  margin: 10px 30px;
+  font-family: "Caveat", cursive;
+}
+
+.experience p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  justify-content: center;
+  display: flex;
+}
+
+.experience p a {
+  text-decoration: underline;
+  color: black;
+}
+
+.opensource p:first-child {
+  font-size: 2rem;
+  margin: 10px 30px;
+  font-family: "Caveat", cursive;
+}
+
+.opensource p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  display: flex;
+justify-content: center;
+}
+
+.education p:first-child {
+  font-size: 2rem;
+  justify-content: center;
+  display: flex;
+  font-family: "Caveat", cursive;
+  margin: 10px 30px;
+}
+
+.education > p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.education ul li {
+  margin: 7px 0;
+  list-style: outside;
+}
+
+footer {
+  justify-content: center;
+  justify-items: center;
+  margin-top: auto;
+}
+footer div {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer div  {
+  margin: 5px ;
+}
+footer div p a {
+  color: black;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    user-select: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    margin-bottom: 10px;
+  }
+
+  .left img {
+    width: auto;
+    height: 10%;
+  }
+  header p {
+    align-self: center;
+  }
+
+  .right ul {
+    padding-right: 13px;
+    border-right: 2px solid rgb(61, 60, 60);
+  }
+  .right ul:last-child {
+    border: none;
+    padding-right: 0;
+  }
+  .project p {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 2.5rem;
+  }
+
+  .exp-os {
+    display: flex;
+    align-items: center;
+  }
+
+  .experience p:first-child {
+    font-size: 2.5rem;
+  }
+  .experience p {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .opensource p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .opensource p:first-child{
+    font-size: 2.5rem;
+  }
+
+  .education p{
+    display: flex;
+    justify-content: center;
+  }
+
+  .education p:first-child {
+    font-size: 2.5rem;
+  }
+  footer {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+  }
+  span img{
+    margin:  0;
+    justify-items: center;
+  }
+  footer div {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer div p{
+    padding: 10px 3px;
+    margin-bottom: 1vw;
+  }
+
+  footer p a {
+    color: black;
+  }
+}
